@@ -16,13 +16,89 @@ html {
 body {
   margin: 0;
   background: #000;
-
+  font-family: 'Times New Roman', Times, serif;
 }
 
 /* --- Navigation Menu ------------------------------ */
+/* overlay */
+.overlay {
+position: fixed;
+z-index: 9;
+top: 0;
+left: 0;
+width: 100vw;
+height: 100vh;
+background-color: rbga(0,0,0,0.7);
+}
 
+/* nav menu itles */
+nav, nav ul {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
 
+nav ul{
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  list-style: none;
+}
 
+nav ul li {
+  height: 20%;
+  overflow: hidden;
+}
+
+nav li a {
+  position: relative;
+  top: 45%;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+}
+
+nav li a:hover{
+  transform: scale(1.2);
+}
+
+nav li a::before{
+  content: "";
+  width: 25vw;
+  height: 3px;
+  background-color: #fff;
+  position: absolute;
+  top: 47.5%;
+  left: 0;
+  opacity: 1;
+}
+
+nav li a:hover::before{
+  opacity: 1;
+}
+
+nav li:nth-last-of-type(1){
+  background-color: var(--navColor1);
+}
+
+nav li:nth-last-of-type(2){
+  background-color: var(--navColor2);
+}
+
+nav li:nth-last-of-type(3){
+  background-color: var(--navColor3);
+}
+
+nav li:nth-last-of-type(4){
+  background-color: var(--navColor4);
+}
+
+nav li:nth-last-of-type(5){
+  background-color: var(--navColor5);
+}
 /* --- Menu Bars ------------------------------------ */
 
 .menu-bars {
@@ -74,7 +150,7 @@ section {
 }
 
 section#home {
-  background-image: url("https://images.unsplash.com/photo-1581453904507-626ddb717f14?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2089&q=80");
+  background-image: url("https://images.unsplash.com/photo-1485871981521-5b1fd3805eee?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2940&q=80");
   background-size: cover;
   background-position: center center;
 }
