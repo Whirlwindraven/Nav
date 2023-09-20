@@ -18,7 +18,7 @@ function toggleNav() {
     menuBars.classList.toggle('change');
 
     overlay.classList.toggle('overlay-active');
-    if(overlay.classList.contouts('overlay-active')){
+    if(overlay.classList.contains('overlay-active')){
         overlay.classList.replace('overlay-slide-left', 'overlay-slide-right');
 
        navAnimation('out', 'in');
