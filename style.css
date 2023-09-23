@@ -233,6 +233,7 @@ section#home a {
 
 section#about {
   background-color: var(--navColor2);
+  justify-content: center;
 }
 
 section#skills {
